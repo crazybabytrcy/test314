@@ -1,0 +1,6 @@
+framework module test314 {
+  umbrella header "test314-umbrella.h"
+
+  export *
+  module * { export * }
+}

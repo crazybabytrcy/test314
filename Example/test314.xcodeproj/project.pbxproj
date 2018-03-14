@@ -57,14 +57,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		68E96A2B9F192A10F404D77C /* test314.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = test314.podspec; path = ../test314.podspec; sourceTree = "<group>"; };
+		68E96A2B9F192A10F404D77C /* test314.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = test314.podspec; path = ../test314.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7671FBF849721BCC04D7BD75 /* Pods-test314_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test314_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test314_Tests/Pods-test314_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8012209F46561B81987E6A5E /* Pods_test314_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test314_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		897A0948BEDD5DD47173CD5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		897A0948BEDD5DD47173CD5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B6FFA7F5DA8869228D53C391 /* Pods-test314_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test314_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-test314_Example/Pods-test314_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F7F2A43AEBD45CA54D6C7D30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F7F2A43AEBD45CA54D6C7D30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F8418B74EB376684E090195F /* Pods-test314_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test314_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-test314_Tests/Pods-test314_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FB7C604FFE450A2E299F9B29 /* Pods-test314_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test314_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test314_Example/Pods-test314_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,10 +319,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-test314_Example/Pods-test314_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/test314/test314.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/test314.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,45 @@
+{
+  "name": "test314",
+  "version": "0.1.0",
+  "summary": "test314.",
+  "description": "test314.test314.test314.test314.",
+  "homepage": "https://github.com/xuebing.li/test314",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xuebing.li": "xuebing.li@china.zhaogang.com"
+  },
+  "source": {
+    "git": "https://github.com/xuebing.li/test314.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "test314/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "Base",
+      "source_files": "test314/Classes/Base/**/*"
+    },
+    {
+      "name": "Category",
+      "source_files": "test314/Classes/Category/**/*"
+    },
+    {
+      "name": "NetWork",
+      "source_files": "test314/Classes/NetWork/**/*",
+      "dependencies": {
+        "AFNetworking": [
+
+        ]
+      }
+    },
+    {
+      "name": "Tool",
+      "source_files": "test314/Classes/Tool/**/*"
+    }
+  ]
+}

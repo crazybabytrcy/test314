@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'test314'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of test314.'
+  s.summary          = 'test314.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'test314.test314.test314.test314.'
 
   s.homepage         = 'https://github.com/xuebing.li/test314'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -29,8 +27,26 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'test314/Classes/**/*'
+  
+  s.subspec 'Base' do |b|
+      b.source_files = 'test314/Classes/Base/**/*'
+  end
+  
+  s.subspec 'Category' do |c|
+      c.source_files = 'test314/Classes/Category/**/*'
+  end
+  
+  s.subspec 'NetWork' do |n|
+      n.source_files = 'test314/Classes/NetWork/**/*'
+      n.dependency 'AFNetworking'
+  end
+  
+  s.subspec 'Tool' do |t|
+      t.source_files = 'test314/Classes/Tool/**/*'
+  end
+
+  #s.source_files = 'test314/Classes/**/*'
   
   # s.resource_bundles = {
   #   'test314' => ['test314/Assets/*.png']
